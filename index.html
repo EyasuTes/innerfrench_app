@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153e38">
+  <title>InnerFrench · Listen & learn</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="transcript.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="./">écouter<span>French, a little every day.</span></a><span class="tag">LISTEN & LEARN</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">INNERFRENCH / EPISODE 01</p><h1>Une langue, deux regards.</h1><p>Learn how we acquire a language. Listen in French, follow along in English.</p></section>
+    <section class="player" aria-label="Episode player">
+      <div class="player-top"><div><span class="eyebrow">NOW LISTENING</span><h2>Learning a language</h2></div><span id="position">Passage 1 / 46</span></div>
+      <audio id="audio" src="episode1.mp3" preload="metadata" controls aria-label="Episode 1 audio"></audio>
+      <div class="controls"><button id="back" aria-label="Skip back ten seconds">−10 sec</button><button id="previous">Previous</button><button id="next">Next</button><label>Speed <select id="speed"><option value="0.65">0.65×</option><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option><option value="1.25">1.25×</option></select></label></div>
+      <div class="options"><label><input id="follow" type="checkbox" checked> Follow audio</label><label><input id="loop" type="checkbox"> Repeat passage</label><button id="current">Find current passage</button></div>
+      <p id="status" role="status">Press play, or choose a passage below.</p>
+    </section>
+    <section class="reading" aria-label="Bilingual transcript">
+      <div class="reading-tools"><div><p class="eyebrow">YOUR READING SPACE</p><h2>Listen. Notice. Repeat.</h2></div><label><input id="english" type="checkbox" checked> English</label><button id="size" aria-pressed="false">Larger text</button></div>
+      <p class="hint">Tap a passage’s time to listen from there. Highlighting follows whole passages.</p>
+      <div id="passages"></div>
+    </section>
+    <footer>Audio and French transcript: innerFrench / Hugo Cotton. English translation supplied by you.<br>Your listening position is saved on this device.</footer>
+    <noscript>Please enable JavaScript to display the bilingual transcript. The audio player still works.</noscript>
+  </main>
+</body>
+</html>
